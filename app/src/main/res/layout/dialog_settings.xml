@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="主机IP:"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etHostIp"
+                android:textColorHint="#666"
+                android:textColor="#fff"
+                android:hint="比如:192.168.3.28"
+                android:padding="10dp"
+                android:background="@drawable/stroke_corner_background"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="主机端口:"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etHostPort"
+                android:background="@drawable/stroke_corner_background"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="2233"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnCancel"
+                android:padding="10dp"
+                android:background="@drawable/stroke_corner_background"
+                android:text="取消"
+                android:textColor="#fff"
+                android:layout_width="100dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:id="@+id/btnSave"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/stroke_corner_background"
+                android:text="保存"
+                android:textColor="#fff"
+                android:layout_width="100dp"
+                android:layout_height="60dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

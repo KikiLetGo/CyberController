@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.elexlab.cybercontroller.ui.widget.SevenPartDigitalTube
+        android:id="@+id/timeHourHigh"
+        android:layout_width="60dip"
+        android:layout_height="120dip" />
+    <com.elexlab.cybercontroller.ui.widget.SevenPartDigitalTube
+        android:id="@+id/timeHourLow"
+        android:layout_marginLeft="15dip"
+        android:layout_width="60dip"
+        android:layout_height="120dip" />
+    <TextView
+        android:id="@+id/tvBreaker"
+        android:layout_width="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_height="120dip"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:text=":"/>
+
+    <com.elexlab.cybercontroller.ui.widget.SevenPartDigitalTube
+        android:id="@+id/timeMinHigh"
+        android:layout_marginLeft="15dip"
+        android:layout_width="60dip"
+        android:layout_height="120dip" />
+
+    <com.elexlab.cybercontroller.ui.widget.SevenPartDigitalTube
+        android:id="@+id/timeMinLow"
+        android:layout_marginLeft="15dip"
+        android:layout_width="60dip"
+        android:layout_height="120dip" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mainBoard"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.elexlab.cybercontroller.ui.widget.TouchboardView
+            android:id="@+id/touchboardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rlMicrophone"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp">-->
+<!--            <ImageView-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:src="@mipmap/ic_microphone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+<!--        </RelativeLayout>-->
+        <com.elexlab.cybercontroller.ui.widget.SpeechRecordView
+            android:visibility="visible"
+            android:id="@+id/speechRecordView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/rlSettings"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:src="@drawable/ic_baseline_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <com.elexlab.cybercontroller.ui.widget.InfoBoxView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ivInfoBoxView"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="480dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/rlContainer"
+            android:padding="16dp"
+            android:background="#dd000000"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.elexlab.cybercontroller.ui.widget.TranslationView
+                android:id="@+id/tvTranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

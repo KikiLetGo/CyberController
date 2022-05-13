@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.elexlab.cybercontroller.ui.widget.AssetsAnimationImageView
+                android:id="@+id/tvImageView"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tv_sleep"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:id="@+id/llSleep"
+                android:layout_toRightOf="@id/tvImageView"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="z"
+                    android:textColor="#9999"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="#9999"
+                    android:layout_marginLeft="10dp"
+                    android:text="z"
+                    android:textSize="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="#9999"
+                    android:layout_marginLeft="10dp"
+                    android:text="z"
+                    android:textSize="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/preview_container"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="360dp">
+
+
+                android:layout_height="wrap_content">
+            <com.elexlab.cybercontroller.ui.widget.CoolDigitalClock
+                android:id="@+id/digitalClock"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rlScanFace"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:layout_width="300dp"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_centerInParent="true"
+                    android:id="@+id/surface_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imageview_scanbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mask" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:visibility="invisible"
+                android:text="欢迎回来"
+                android:textSize="60dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
